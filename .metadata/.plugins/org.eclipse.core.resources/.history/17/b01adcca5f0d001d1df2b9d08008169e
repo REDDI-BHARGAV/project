@@ -1,0 +1,30 @@
+package com.test;
+
+import javax.persistence.EntityTransaction;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.entity.Employee;
+import com.utility.Utility;
+
+public class saveObject {
+	public static int save(Employee emp) {
+		Session ses = Utility.getSession();
+		Transaction tx = null;
+		Integer count = 0;
+		try (ses) {
+			tx = ses.beginTransaction();
+			count = (Integer)ses.save(emp);
+			tx.commit();
+		} catch (HibernateException he) {
+			he.printStackTrace();
+			tx.rollback();
+		} catch (Exception e) {
+			e.printStackTrace();
+			tx.rollback();
+		}
+		return count;
+	}
+}

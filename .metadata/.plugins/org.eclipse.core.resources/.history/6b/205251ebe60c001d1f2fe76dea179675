@@ -1,0 +1,18 @@
+package com.test;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.entity.Employee;
+import com.utility.Utility;
+
+public class saveObject {
+	public static int save(Employee emp) {
+		Session ses =Utility.getSession();
+		Transaction tx= ses.beginTransaction();
+		 int count = (Integer) ses.save(emp);
+		tx.commit();
+		return count;
+	}
+
+}

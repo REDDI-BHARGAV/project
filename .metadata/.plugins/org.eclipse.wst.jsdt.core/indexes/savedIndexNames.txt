@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\BHARGAV\Desktop\CGI\sts-4.15.1.RELEASE\project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1922008688.index
+3929131114.index
+563526927.index
+56687880.index
+2582384556.index
+477557259.index
+624652367.index

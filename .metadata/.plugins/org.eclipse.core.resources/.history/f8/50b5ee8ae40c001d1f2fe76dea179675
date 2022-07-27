@@ -1,0 +1,69 @@
+package com.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@jakarta.persistence.Entity
+@Table(name="emp")
+public class Employee {
+	
+	@Id
+	@GeneratedValue
+	private int id;
+	
+	@Column(name="emp_name")
+	private String name;
+	
+	@Column(name="emp_gender")
+	private String gender;
+	
+	@Column(name="emp_loc")
+	private String location;
+	
+	@Column(name="emp_bb")
+	private String bb;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public String getBb() {
+		return bb;
+	}
+
+	public void setBb(String bb) {
+		this.bb = bb;
+	}
+	
+
+}

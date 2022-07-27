@@ -1,0 +1,40 @@
+package com.cgi;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/register")
+public class servlet extends HttpServlet {
+	
+	@Override
+protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	// TODO Auto-generated method stub
+		PrintWriter out =resp.getWriter();
+		resp.setContentType("text/html");
+		
+		String name = req.getParameter("name");
+		String gender =req.getParameter("gender");
+		String loc = req.getParameter("location");
+		String bb =req.getParameter("broadband");
+		
+		out.println("<h2>name:"+name+"</h2>");
+		out.println(gender);
+		out.println(loc);
+		out.println(bb);
+	
+}
+	@Override
+		protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+			// TODO Auto-generated method stub
+		doGet(req,resp);
+			
+		}
+
+}

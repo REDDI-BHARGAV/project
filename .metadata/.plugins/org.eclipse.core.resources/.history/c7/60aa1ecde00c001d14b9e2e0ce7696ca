@@ -1,0 +1,19 @@
+package com.entity;
+
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@jakarta.persistence.Entity
+@Table(name="emp")
+public class Employee {
+	
+	@Id
+	
+	private int id;
+	private String name;
+	private String gender;
+	private String location;
+	private String bb;
+	
+
+}

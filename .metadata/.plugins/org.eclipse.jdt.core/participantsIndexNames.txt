@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+C:\Users\BHARGAV\Desktop\CGI\sts-4.15.1.RELEASE\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2703712743.index
+\webapp\src\main\java
+C:\Users\BHARGAV\Desktop\CGI\sts-4.15.1.RELEASE\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2498326026.index
+\Newz\src\main\java
+C:\Users\BHARGAV\Desktop\CGI\sts-4.15.1.RELEASE\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2401708307.index
+\webapp\src\main\resources
+C:\Users\BHARGAV\Desktop\CGI\sts-4.15.1.RELEASE\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2582384556.index
+\webapp\src\main\java
+C:\Users\BHARGAV\Desktop\CGI\sts-4.15.1.RELEASE\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2784271179.index
+\PROJECT\src\main\resources
